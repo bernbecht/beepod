@@ -1,0 +1,14 @@
+.HeaderBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 1rem;
+  position: fixed;
+  height: 68px;
+  background-color: #74706D;
+  width: 100%;
+  box-sizing: border-box; }
+  .HeaderBar .actionButtons {
+    display: flex;
+    align-items: center;
+    margin-left: auto; }

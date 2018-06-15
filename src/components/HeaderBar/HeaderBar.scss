@@ -1,0 +1,19 @@
+@import '../common/styles/variables.scss';
+
+.HeaderBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1rem;
+    position: fixed;
+    height: 68px;
+    background-color: $color-gray-dark;
+    width: 100%;
+    box-sizing: border-box;
+
+    .actionButtons {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+}
