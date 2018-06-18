@@ -1,0 +1,27 @@
+@import '../common/styles/variables.scss';
+
+.SubscribedList {
+    background-color: $color-gray-lighter;
+    padding: 0.5rem 0;
+
+    .horizontalList {
+      height: 100%;
+    }
+
+    ul {
+      // display: flex;
+      // flex-direction: row;
+      height: 100%;
+      overflow: auto;
+      white-space: nowrap;
+    }
+    
+    li {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: $color-gray-dark;
+      margin-left: 1rem;
+      display: inline-block;
+    }
+}
