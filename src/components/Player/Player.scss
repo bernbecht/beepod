@@ -1,0 +1,36 @@
+@import '../common/styles/variables.scss';
+
+.Player {
+    background-color: $color-gray-medium;
+    height: calc(100% - 88px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .trackTextWrapper {
+      text-align: center;
+    }
+
+    .audioControlsWrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .audioControls-button {
+        background-color: $color-gray-darker;
+        margin: 0 1rem;
+      }
+
+      .small {
+        height: 30px;
+        width: 30px;
+      }
+
+      .big {
+        height: 60px;
+        width: 60px;
+      }
+    }
+}

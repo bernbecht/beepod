@@ -1,0 +1,22 @@
+.Player {
+  background-color: #95908C;
+  height: calc(100% - 88px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .Player .trackTextWrapper {
+    text-align: center; }
+  .Player .audioControlsWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .Player .audioControlsWrapper .audioControls-button {
+      background-color: #2C2825;
+      margin: 0 1rem; }
+    .Player .audioControlsWrapper .small {
+      height: 30px;
+      width: 30px; }
+    .Player .audioControlsWrapper .big {
+      height: 60px;
+      width: 60px; }
