@@ -7,6 +7,7 @@ import Player from './components/Player/Player';
 
 
 import './App.css';
+import './components/common/Button/Button.css';
 
 
 class App extends Component {
@@ -14,7 +15,9 @@ class App extends Component {
     return (
       <div className="App">
         <HeaderBar />
-        <SubscribedList />
+        <div className="App-content">
+            <SubscribedList />
+        </div>
         <Player />
       </div>
     );

@@ -6,14 +6,30 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
+    box-sizing: border-box;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 84px;
+    right: 0;
+    width: 100%;
+
+    transition: transform 0.3s ease;
+
+    &.isHidden {
+      transform: translateY(101%);
+    }
+
     .trackTextWrapper {
+      margin-top: 5rem;
       text-align: center;
     }
 
     .audioControlsWrapper {
+      margin-bottom: 5rem;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -32,5 +48,10 @@
         height: 60px;
         width: 60px;
       }
+    }
+
+    .collapsable {
+      position: absolute;
+      right: 0;
     }
 }

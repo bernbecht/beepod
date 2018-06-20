@@ -1,0 +1,8 @@
+button {
+  margin: 0;
+  border: 0;
+  padding: 0; }
+  button.medium {
+    padding: 0.5rem; }
+  button.collapsable {
+    background: transparent; }
