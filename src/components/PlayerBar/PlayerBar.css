@@ -1,0 +1,19 @@
+.PlayerBar {
+  position: absolute;
+  height: 4rem;
+  background-color: #95908C;
+  width: 100%;
+  /* z-index: 9; */
+  bottom: 0; }
+  .PlayerBar .content {
+    display: flex;
+    justify-content: space-between;
+    height: 100%; }
+    .PlayerBar .content.isHidden {
+      display: none; }
+  .PlayerBar .playerControlsWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .PlayerBar .playerControlsWrapper div {
+      margin-left: 16px; }

@@ -1,0 +1,28 @@
+@import '../common/styles/variables.scss';
+
+.PlayerBar {
+    position: absolute;
+    height: 4rem;
+    background-color: $color-gray-medium;
+    width: 100%;
+    /* z-index: 9; */
+    bottom: 0;
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+      &.isHidden {
+        display: none;
+      }
+    }
+
+    .playerControlsWrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      div {
+        margin-left: 16px;
+      }
+    }
+}
