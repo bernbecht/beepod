@@ -1,0 +1,10 @@
+.DownloadList {
+  overflow: auto;
+  height: calc(100% - 64px); }
+  .DownloadList .listItem {
+    display: flex;
+    padding: 1rem;
+    border-bottom: 1px solid #74706D; }
+    .DownloadList .listItem .listItemImage img {
+      width: 3rem;
+      height: 3rem; }

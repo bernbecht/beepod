@@ -5,7 +5,8 @@ import HeaderBar from './components/HeaderBar/HeaderBar';
 import SubscribedList from './components/SubscribedList/SubscribedList';
 import Player from './components/Player/Player';
 import PlayerBar from './components/PlayerBar/PlayerBar';
-
+import DownloadList from './components/DownloadList/DownloadList';
+import PodcastDetailPage from './components/PodcastDetailPage/PodcastDetailPage';
 
 import './App.css';
 import './components/common/Button/Button.css';
@@ -16,28 +17,34 @@ class App extends Component {
         super(props);
         this.state = {
             isPlaying: false,
-            isPanelMaxized: true
+            isPanelMaxized: false,
+            location: 'home'
         };
-      }
+    }
     
     togglePanelMaxized(event) {
-        console.log('oi');
         this.setState({isPanelMaxized: !this.state.isPanelMaxized});
     }
 
-    handleChange() {
-        console.log('changed');
+    setLocation(sLocation) {
+        this.setState({location: sLocation});
     }
 
     render() {
         return (
-            <div className="App" onChange={this.handleChange}>
-                <HeaderBar />
+            <div className="App">
+                <HeaderBar onNavBack={this.setLocation.bind(this)}/>
+                
                 <div className="App-content">
-                    <SubscribedList />
+                    <SubscribedList onItemClick={this.setLocation.bind(this)}/>
+                    <DownloadList />
                 </div>
+                
                 <Player isPanelMaxized={this.state.isPanelMaxized} onMinimizePanel={this.togglePanelMaxized.bind(this)}/>
+                
                 <PlayerBar isPanelMaxized={this.state.isPanelMaxized} onCollapsibleBtnClick={this.togglePanelMaxized.bind(this)}/>
+                
+                <PodcastDetailPage isActive={this.state.location == 'podcastDetail' ? true: false} />
             </div>
         );
     }

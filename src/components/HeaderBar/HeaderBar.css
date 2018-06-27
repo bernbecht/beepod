@@ -11,3 +11,5 @@
     display: flex;
     align-items: center;
     margin-left: auto; }
+  .HeaderBar .backButton {
+    margin-right: 0.25rem; }

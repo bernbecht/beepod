@@ -1,0 +1,15 @@
+@import '../common/styles/variables.scss';
+
+.PodcastDetailPage {
+  height: 100%;
+  width: 100%;
+  background-color: $color-gray-lighter;
+  position: absolute;
+  top: 88px;
+
+  transition: transform 0.3s ease;
+
+    &.isHidden {
+      transform: translateX(101%);
+    }
+}

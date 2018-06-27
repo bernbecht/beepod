@@ -1,0 +1,19 @@
+@import '../common/styles/variables.scss';
+
+.DownloadList {
+  overflow: auto;
+  height: calc(100% - 64px);
+
+  .listItem {
+    display: flex;
+    padding: 1rem;
+    border-bottom: 1px solid $color-gray-dark;
+
+    .listItemImage {
+      img {
+        width: 3rem;
+        height: 3rem;
+      }  
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.PodcastDetailPage {
+  height: 100%;
+  width: 100%;
+  background-color: #D6D3D1;
+  position: absolute;
+  top: 88px;
+  transition: transform 0.3s ease; }
+  .PodcastDetailPage.isHidden {
+    transform: translateX(101%); }

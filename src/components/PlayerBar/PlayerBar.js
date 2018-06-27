@@ -22,8 +22,7 @@ class PlayerBar extends Component {
     }
 
     render() {
-        const visibilityClass = this.state.isVisible ? '' : 'isHidden';
-        this.state.isVisible = this.props.isPanelMaxized;
+        const visibilityClass = this.props.isPanelMaxized ? 'isHidden' : '';
 
         return (
             <div className={`PlayerBar`}>
